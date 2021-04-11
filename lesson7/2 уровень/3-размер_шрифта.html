@@ -22,7 +22,11 @@
     
 
     <script>
-        
+        let inputrange = document.querySelector('input');
+        let divText = document.querySelector('div');
+        inputrange.addEventListener('input', function(event) {
+            divText.style.fontSize = event.target.value + 'px';
+        })
     </script>
 </body>
 </html>
